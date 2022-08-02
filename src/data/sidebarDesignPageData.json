@@ -1,0 +1,104 @@
+[
+    {
+        "title": "General",
+        "icon": "bi-gear-fill",
+        "childrens": [
+            {
+                "title": "Home",
+                "icon": "bi-house-fill",
+                "path": "/"
+            },
+            {
+                "title": "About",
+                "icon": "bi-info-circle-fill"
+
+            },
+            {
+                "title": "Contact",
+                "icon": "bi-phone-fill",
+                "childrens": [
+                    {
+                        "title": "Facebook",
+                        "icon": "bi-facebook"
+                    },
+                    {
+                        "title": "Twitter",
+                        "icon": "bi-twitter"
+                    },
+                    {
+                        "title": "Instagram",
+                        "icon": "bi-instagram"
+                    }
+                ]
+            },
+            {
+                "title": "FAQ",
+                "icon": "bi-question-circle-fill"
+            }
+        ]
+    },
+    {
+        "title": "Template",
+        "icon": "bi-app-indicator",
+        "childrens": [
+            {
+                "title": "temp1"
+            },
+            {
+                "title": "temp2"
+            },
+            {
+                "title": "temp3"
+            },
+            {
+                "title": "temp4"
+            }
+        ]
+    },
+    {
+        "title": "Themes",
+        "icon": "bi-magic",
+        "childrens": [
+            {
+                "title": "theme1"
+            },
+            {
+                "title": "theme2"
+            },
+            {
+                "title": "theme3"
+            }
+        ]
+    },
+    {
+        "title": "Available Widgets",
+        "icon": "bi-view-list",
+        "childrens": [
+            {
+                "title": "Navbar",
+                "icon":"bi-segmented-nav"
+            },
+            {
+                "title": "Sidebar",
+                "icon":"bi-layout-sidebar-inset"
+            },
+            {
+                "title": "Header",
+                "icon":"bi-card-heading"
+            },
+            {
+                "title": "Footer",
+                "icon":"bi-file-break-fill"
+            },
+            {
+                "title": "content",
+                "icon":"bi-body-text"
+            }
+        ]
+    },
+    {
+        "title": "Save",
+        "icon": "bi-save2-fill"
+
+    }
+]
