@@ -5,7 +5,8 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { Navbar, Footer, ThemeSettings } from './components';
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
-import './components/sidebarDesignPage';
+import SidebarDesignPage from './components/SidebarDesignPage';
+import DesignArea from './components/DesignArea';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -16,6 +17,7 @@ const App = () => {
       setCurrentColor(currentThemeColor);
       setCurrentMode(currentThemeMode);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
@@ -39,11 +41,11 @@ const App = () => {
           </div>
           {activeMenu ? (
             <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
-              <sidebarDesignPage />
+              <SidebarDesignPage />
             </div>
           ) : (
             <div className="w-0 dark:bg-secondary-dark-bg">
-              <sidebarDesignPage />
+              <SidebarDesignPage />
             </div>
           )}
           <div
@@ -55,6 +57,9 @@ const App = () => {
           >
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
               <Navbar />
+            </div>
+            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
+              <DesignArea />
             </div>
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full " />
             <div>

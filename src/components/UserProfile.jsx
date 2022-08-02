@@ -3,6 +3,7 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { userProfileData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 import avatar from '../data/avatar.jpg';
+import { Button } from '@syncfusion/ej2/buttons';
 
 const UserProfile = () => {
   const { currentColor } = useStateContext();

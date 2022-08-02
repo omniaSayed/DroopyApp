@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaAffiliatetheme } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Sidebar from './Sidebar';
 // import { useState } from 'react';
 
 function NavbarDesignPage() {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 
-export default function SidebarItem({ item }) {
+export default function SidebarDesignPageItem({ item }) {
   const [open, setOpen] = useState(false);
 
   if (item.childrens) {
@@ -15,15 +15,15 @@ export default function SidebarItem({ item }) {
                   <i className="bi-chevron-down toggle-btn" onClick={() => setOpen(!open)} />
         </div>
         <div className="sidebar-content">
-      { item.childrens.map((child, index) => <SidebarItem key={index} item={child} />) }
+      { item.childrens.map((child, index) => <SidebarDesignPageItem key={index} item={child} />) }
           </div>
         </div>
   );
   }
   return (
-            <a className="sidebar-item plain">
+            <button className="sidebar-item plain">
                 { item.icon && <i className={item.icon} /> }
               {item.title}
-            </a>
+            </button>
   );
 }
